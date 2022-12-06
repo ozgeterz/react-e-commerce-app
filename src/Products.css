@@ -9,6 +9,8 @@
     border: 1px solid rgba(0,0,0,0.3);
     border-radius: 10px;
     overflow: hidden;
+    border: none;
+   
 }
 .product p{
     position: absolute;
@@ -29,12 +31,16 @@
 }
 .product button{
     position: absolute;
+    padding: 10px 75px;
+    border-radius: 10px;
+    background-color: rgb(255, 215, 142);
     transition: 0.2s ease;
     bottom: 15px;
-    background: white;
+    cursor: pointer;
+
 }
 .product button:hover{
-    background: black;
+    background: rgb(210, 119, 119);
     color: white;
     font-weight: bolder;
 }

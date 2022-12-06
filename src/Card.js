@@ -1,6 +1,6 @@
-import React ,{useEffect} from 'react'
+import React  from 'react'
 import './Card.css'
-import {useDispatch} from 'react-redux'
+import {useDispatch,useSelector} from 'react-redux'
 import {addtocard,deletefrombasket} from './actions'
 import {v4 as uuidv4} from 'uuid'
 

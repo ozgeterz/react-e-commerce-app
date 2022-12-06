@@ -6,14 +6,10 @@
 .products{
   width: 90vw;
   margin: 10px auto;
-  display: flex;
+  display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit,250px);
   gap: 10px;
-
-}
-.wholecard{
-  display: flex;
 
 }
 .empytycard{

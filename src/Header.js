@@ -8,15 +8,7 @@ import { useDispatch } from "react-redux";
 function Header() {
   const card = useSelector((state) => state.addtocard);
   const dispatch = useDispatch();
-  useEffect(() => {
-    if (localStorage.getItem("carditems") !== null) {
-      const getitems = JSON.parse(localStorage.getItem("carditems"));
-      getitems.forEach((item) => {
-        dispatch(addtocard(item));
-      });
-    }
-  });
-
+ 
   return (
     <div className="header">
       

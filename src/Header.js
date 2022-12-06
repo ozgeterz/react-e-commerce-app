@@ -11,10 +11,10 @@ function Header() {
  
   return (
     <div className="header">
-      
+      <div className="search">
         <input type="text" placeholder="Search.."></input>
         <button>Search</button>
-   
+   </div>
       <div className="card" onClick={() => dispatch(cardclick())}>
         <ShoppingBagIcon className="bagicon" />{" "}
         <div className="quantity">{card.length}</div>

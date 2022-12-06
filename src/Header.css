@@ -80,7 +80,6 @@
 @media (max-width:600px){
     .search
     {
-        position: absolute;
-        left: 2%;
+        display: none;
     }
 }

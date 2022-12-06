@@ -1,7 +1,6 @@
 const addtocardReducers = (state = [], action) => {
   switch (action.type) {
     case "addtocard": {
-    
       return [...state, action.payload];
     }
     case "deletefrombasket": {

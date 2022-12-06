@@ -8,7 +8,7 @@
   margin: 10px auto;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit,250px);
+  grid-template-columns: repeat(auto-fit,300px);
   gap: 10px;
 
 }

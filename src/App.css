@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.products{
+  width: 90vw;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit,250px);
+  gap: 10px;
+
+}
+.wholecard{
+  display: flex;
+
+}
+.empytycard{
+  margin-top: 50px;
+  padding: 0.5rem;
+  color: rgba(0,0, 0, 0.5);
+  align-items: center;
+}
+@media (max-width:600px){
+  .products{
+    width: 100%;
+    grid-template-columns: (1,400px);
+  }
+}
+

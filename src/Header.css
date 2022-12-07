@@ -9,8 +9,7 @@
     justify-content: center;
     z-index: 1000;
     background: white;
-
-
+    gap: 20px;
 }   
 
 .header input{

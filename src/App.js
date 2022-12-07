@@ -17,7 +17,7 @@ function App() {
    
    
     const getdata = async () => {
-      const data = await fetch("https://fakestoreapi.com/products");
+      const data = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline");
       const result = await data.json();
       setitems(result);
     };
@@ -47,7 +47,7 @@ function App() {
             <Products
               id={uuidv4()}
               key={item.id}
-              imagesrc={item.image}
+              imagesrc={item.image_link}
               Product={item.title}
               Price={item.price}
             />

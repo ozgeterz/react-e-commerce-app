@@ -1,7 +1,7 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import './Products.css'
 import {addtocard} from './actions'
-import {useDispatch,useSelector} from 'react-redux'
+import {useDispatch} from 'react-redux'
 
 function Products({id,imagesrc,Product,Price}) {//props
     const dispatch=useDispatch()

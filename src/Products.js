@@ -13,7 +13,7 @@ function Products({id,imagesrc,Product,Price}) {//props
         <img src={imagesrc} alt="" />
         <h3>{Product}</h3>
         <p>{Price}</p>
-        <button onClick={()=>Additemincard()}>Add to Basket</button>
+        <button onClick={()=>Additemincard()}>Add to Card</button>
       
     </div>
   )

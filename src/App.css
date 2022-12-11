@@ -1,15 +1,18 @@
-* {
-  margin: 0;
+*{
+  margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
+  
 }
 .products{
+position:absolute;
+left: 200px;
+top: 100px;
   width: 90vw;
-  margin: 10px auto;
   display: grid;
-  justify-content: center;
   grid-template-columns: repeat(auto-fit,300px);
   gap: 10px;
+ 
+
 
 }
 .empytycard{
@@ -25,3 +28,97 @@
   }
 }
 
+.header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  min-height: 10vh;
+  border-bottom: 1px solid whitesmoke;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  z-index: 1000;
+  background: rgb(224, 249, 123);
+  gap: 20px;
+}   
+
+.header input{
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  outline: none;
+
+}
+.header button{
+  padding: 0.52rem 3rem;
+  background: none;
+  margin-left: 10px;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+.card{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  right: 2%;
+  color: orange;
+  border-radius: 50%;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+.bagicon{
+  position: relative;
+  height: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  pointer-events: none;
+  
+}
+.quantity{
+  position: absolute;
+  bottom: -10px;
+  height: 20px;
+  width: 20px;
+  left: 60%;
+  bottom: 2%;
+  color: white;
+  border-radius: 50%;
+  background: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  pointer-events: none;
+}
+.header button
+{
+  transition: 0.2s ease;
+}
+
+.header button:hover{
+  background: black;
+  color: white;
+  font-weight: bolder;
+
+}
+.link{
+  color: black;
+  font-size: large;
+  font-weight: 600;
+
+}
+.navbar{
+  display: flex;
+  gap: 10px;
+  
+}
+@media (max-width:600px){
+  .search
+  {
+      display: none;
+  }
+}

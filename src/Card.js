@@ -1,6 +1,6 @@
 import React  from 'react'
 import './Card.css'
-import {useDispatch,useSelector} from 'react-redux'
+import {useDispatch} from 'react-redux'
 import {addtocard,deletefrombasket} from './actions'
 import {v4 as uuidv4} from 'uuid'
 
@@ -21,7 +21,7 @@ function Card({id,imagesrc,Product,Price}) {
         <p>{Price}</p>
          </div>
          <div className='cardbuttons'>
-            <button onClick={()=> addtobasket()}>ADD TO BASKET</button>
+            <button onClick={()=> addtobasket()}>ADD TO CARD</button>
             <button onClick={()=> deletefromcard()}>DELETE</button>
 
 

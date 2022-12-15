@@ -1,5 +1,11 @@
-const Contact = () => {
-    return ;
-  };
+import "./Contact.css";
+function Contact() {
+  return (
+    
+      <div className="contact">CONTACT</div>
   
-  export default Contact;
+    
+  );
+}
+
+export default Contact;

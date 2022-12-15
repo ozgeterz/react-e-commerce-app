@@ -47,7 +47,7 @@ function Home() {
               id={uuidv4()}
               key={item.id}
               imagesrc={item.image_link}
-              Product={item.title}
+              Product={item.name}
               Price={item.price}
             />
           ))}

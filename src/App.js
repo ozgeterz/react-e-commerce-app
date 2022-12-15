@@ -9,6 +9,8 @@ import { cardclick } from "./actions";
 import { useDispatch } from "react-redux";
 import Layout from "./pages/Layout";
 import Info from "./pages/Info";
+import Logo from "./images/logo.svg";
+
 
 function App() {
   const card = useSelector((state) => state.addtocard);
@@ -17,6 +19,12 @@ function App() {
   return (
     <div>
       <div className="header">
+        <div className="container">
+          <div className="brand">
+            <p className="name">FORYOURSELF</p>
+            <img className="logo" src={Logo} alt="" />
+          </div>
+          
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
@@ -32,6 +40,7 @@ function App() {
         <div className="card" onClick={() => dispatch(cardclick())}>
           <ShoppingBagIcon className="bagicon" />{" "}
           <div className="quantity">{card.length}</div>
+        </div>
         </div>
       </div>
       <BrowserRouter>

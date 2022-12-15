@@ -7,7 +7,6 @@ import { Provider } from 'react-redux';
 import {createStore} from 'redux';
 import  allreducers from  "./reducers"
 
-
 const store=createStore(allreducers)
 
 

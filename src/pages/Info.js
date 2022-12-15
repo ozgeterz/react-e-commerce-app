@@ -1,11 +1,11 @@
-import React from 'react'
-
+import "./Info.css";
 function Info() {
   return (
-    <div>
-      
-    </div>
-  )
+    
+      <div className="info">INFO</div>
+  
+    
+  );
 }
 
-export default Info
+export default Info;

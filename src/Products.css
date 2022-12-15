@@ -5,13 +5,21 @@
     flex-direction: column;
     padding: 0.2rem;
     height: 450px;
-    width: 250px;   
+    width: 300px;   
     overflow: hidden;
-    border: none;
-   
+    border: 1px solid rgb(230, 225, 225);
+   gap:10px;
+   margin-top: 20%;
+}
+.product:hover{
+    z-index:4;
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);  
+    -moz-transform: scale(1.01);
+    transform: scale(1.01);
 }
 .product p{
-
+    
     font-weight: bold;
 }
 .product h3{
@@ -21,11 +29,13 @@
 
 }
 .product img{
-    height: 290px;
-    width: 220px;
+    height: 250px;
+    width: 200px;
     object-fit: fill;
+    transition: all;
 
 }
+
 .product button{
     position: absolute;
     padding: 10px 75px;

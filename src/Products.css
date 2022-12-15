@@ -5,17 +5,13 @@
     flex-direction: column;
     padding: 0.2rem;
     height: 450px;
-    width: 300px;   
+    width: 280px;   
     overflow: hidden;
     border: 1px solid rgb(230, 225, 225);
    gap:10px;
    margin-top: 20%;
 }
 .product:hover{
-    z-index:4;
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);  
-    -moz-transform: scale(1.01);
     transform: scale(1.01);
 }
 .product p{
@@ -23,14 +19,18 @@
     font-weight: bold;
 }
 .product h3{
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin: 10px 10px;
     text-overflow: ellipsis;
     white-space: pre-wrap;
+    display: flex;
+    text-align: center;
 
 }
 .product img{
     height: 250px;
     width: 200px;
+    margin: 20px 20px 20px 20px;
     object-fit: fill;
     transition: all;
 
@@ -38,11 +38,12 @@
 
 .product button{
     position: absolute;
-    padding: 10px 75px;
-    border-radius: 10px;
-    background-color: rgb(255, 215, 142);
+    height: 40px;
+    width: 90%;
+    background: rgb(248, 250, 239); 
     transition: 0.2s ease;
-bottom: 10px;
+    bottom: 10px;
+    border: none;
     cursor: pointer;
 
 }

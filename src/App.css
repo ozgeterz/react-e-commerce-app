@@ -27,7 +27,6 @@
 }
 .header{
   min-height: 15vh;
-  border-bottom: 1px solid whitesmoke;
   display: flex;
   align-items:center;
   background: rgb(248, 250, 239); 

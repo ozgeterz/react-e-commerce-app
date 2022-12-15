@@ -4,19 +4,16 @@ import Products from "../Products";
 import Card from "../Card";
 import { useSelector } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
-
 function Home() {
   const [items, setitems] = useState([]);
   const [carditems, setcarditems] = useState([]);
-
   let selectcard = useSelector((state) => state.cardclick);
   let card = useSelector((state) => state.addtocard);
-
   useEffect(() => {
-   
-   
     const getdata = async () => {
-      const data = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline");
+      const data = await fetch(
+        "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
+      );
       const result = await data.json();
       setitems(result);
     };
@@ -24,8 +21,8 @@ function Home() {
     setcarditems(card);
   }, [card, carditems]);
   return (
-
-    <div >
+    <div>
+    
       {selectcard ? (
         carditems.length > 0 ? (
           carditems.map((item) => (
@@ -52,6 +49,8 @@ function Home() {
             />
           ))}
         </div>
+
+        
       )}
     </div>
   );

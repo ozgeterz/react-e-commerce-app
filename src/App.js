@@ -11,7 +11,6 @@ import Layout from "./pages/Layout";
 import Info from "./pages/Info";
 import Logo from "./images/logo.svg";
 
-
 function App() {
   const card = useSelector((state) => state.addtocard);
   const dispatch = useDispatch();
@@ -47,8 +46,10 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> 
+  
     </div>
+  
   );
 }
 
